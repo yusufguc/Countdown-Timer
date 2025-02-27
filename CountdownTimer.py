@@ -75,7 +75,7 @@ def start():
 
 def play_alarm():
     global sound_thread
-    sound_thread=threading.Thread(target=lambda:playsound("C:\\Users\\uzayv\\Downloads\\jolly-ring-287810.mp3"))
+    sound_thread=threading.Thread(target=lambda:playsound("jolly-ring-287810.mp3"))
     sound_thread.start()
 
 def stop():
@@ -121,15 +121,15 @@ btn_strT.pack(side=BOTTOM,padx=5,pady=15)
 
 
 #Tımer presents
-image1=PhotoImage(file="C:\\Users\\uzayv\\Downloads\\brush.png")
+image1=PhotoImage(file="brush.png")
 Btn1=Button(root,image=image1,bg="#000",bd=0,command=brush)
 Btn1.place(x=7,y=300)
 
-image2=PhotoImage(file="C:\\Users\\uzayv\\Downloads\\face.png")
+image2=PhotoImage(file="face.png")
 Btn2=Button(root,image=image2,bg="#000",bd=0,command=face)
 Btn2.place(x=137,y=300)
 
-image3=PhotoImage(file="C:\\Users\\uzayv\\Downloads\\eggs.png")
+image3=PhotoImage(file="eggs.png")
 Btn3=Button(root,image=image3,bg="#000",bd=0,command=eggs)
 Btn3.place(x=267,y=300)
 
